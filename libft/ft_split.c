@@ -81,8 +81,9 @@ static char	**spliter(char **split, const char *s, size_t num_splits, char c)
 		split[i] = allocstr(s + j, c);
 		if (split[i] == NULL)
 		{
-			while (size > 0)
-				free(split[--size]);
+			i = 0;
+			while (split[i])
+				free(split[i++]);
 			free(split);
 			return (NULL);
 		}
@@ -103,28 +104,9 @@ char	**ft_split(char const *s, char c)
 	split = (char **)malloc((num_splits + 1) * sizeof(char *));
 	if (split == NULL)
 		return (NULL);
-	spliter(split, s, num_splits, c);
+	split = spliter(split, s, num_splits, c);
+	if (split == NULL)
+		return (NULL);
 	split[num_splits] = NULL;
 	return (split);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char const	s[] = "Hello     MUNDO";
-	char		c;
-	int	i = 0;
-	char	**split;
-	
-	c = 32;
-	split = ft_split(s, c);
-	printf("%s\n", s);
-	while (i < 10)
-	{
-		printf("SPLIT[%d] = [%s]\n", i + 1, split[i]);
-		i++;
-	}
-	return (0);
-	return (0);
-}*/
