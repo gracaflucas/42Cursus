@@ -21,16 +21,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	int	c;
-
-	c = 99;
-	ft_toupper(c);
-	printf("%s", c);
-	return (0);
-}*/
