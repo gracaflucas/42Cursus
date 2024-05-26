@@ -21,16 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	string[] = "HelloWorldHowAreUDoing?JustWantedToSayHi!!";
-	int	sum;
-
-	sum = ft_strlen(string);
-	printf("Sum: %d\n", sum);	
-	return (0);
-}*/
