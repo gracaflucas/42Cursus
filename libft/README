@@ -1,0 +1,5 @@
+Libft is about creating your own library in c.
+With a handfull of functions to help you manipulate strings and linked lists.
+how to use:
+with the library inside your folder, only thing needed is to "make"
+after that, compile your file with library, in example: "cc your_archive libft.a"
