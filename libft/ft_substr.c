@@ -24,12 +24,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > strlen - start)
 		len = strlen - start;
-	if (len < SIZE_MAX / sizeof(char))
-	{
-		str = (char *)malloc(len * sizeof(char) + 1);
-		if (str == NULL)
-			return (NULL);
-	}
+	str = (char *)malloc(len * sizeof(char) + 1);
+	if (str == NULL)
+		return (NULL);
 	while (s[start] != '\0' && i < len)
 		str[i++] = s[start++];
 	str[i] = '\0';
