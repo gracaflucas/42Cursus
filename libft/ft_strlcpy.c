@@ -30,18 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	int	i;
-	unsigned int	size = 9;
-	char	src[] = "HelloWorld!";
-	char	dest[] = "What should i say?";
-	i = ft_strlcpy(dest, src, size);
-	printf("Dest: %s\n", dest);
-	printf("%i\n", i);
-	return (0);
-}*/
