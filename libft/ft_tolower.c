@@ -21,15 +21,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	int	c;
-
-	c = 99;
-	ft_tolower(c);
-	printf("%s", c);
-	return (0);
-}*/
