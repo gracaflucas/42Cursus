@@ -18,17 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	int	i;
-	char	str[] = "";
-
-	i = ft_isdigit(str);
-	printf("%i", i);
-	return (0);
-}*/
