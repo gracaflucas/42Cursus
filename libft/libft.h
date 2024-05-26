@@ -13,11 +13,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
 
-/*#pragma once*/
 typedef struct s_list
 {
 	void			*content;
