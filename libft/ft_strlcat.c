@@ -35,16 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	size_t	size = 14;
-	char	dst[] = "HelloThere";
-	char	src[] = "mate?";
-	ft_strlcat(dst, src, size);
-	printf("%s\n", dst);
-	return (0);
-}*/
