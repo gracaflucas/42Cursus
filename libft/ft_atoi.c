@@ -39,20 +39,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
-
-/*#include <stdio.h>
-
-int	main(int argc, char **argv)
-{
-	if (argc < 2)
-	{
-		printf("Wrong command line argument\n");
-		return (1);
-	}
-
-	argc = 1;
-	int	result;
-	result = atoi(argv[argc]);
-	printf("%i\n", result);
-	return (0);
-}*/
