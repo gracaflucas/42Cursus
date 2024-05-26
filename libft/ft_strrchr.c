@@ -27,18 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
-#include <string.h>
-
-int main () {
-   
-   const char str[] = "Lucas Graca42";
-   const char ch = 'c';
-   char *ret;
-
-   ret = ft_strrchr(str, ch);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-   
-   return(0);
-}*/
