@@ -19,18 +19,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	int	i;
-	int	c;
-
-	c = 99;
-	i = ft_isalnum(c);
-	printf("%i", i);
-	return (0);
-}*/
