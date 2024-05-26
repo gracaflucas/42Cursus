@@ -38,14 +38,3 @@ char	*ft_strdup(const char *s)
 	ft_strcpy(dest, s);
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "ThisString";
-	printf("%p\n", &s);
-	printf("%p\n%s\n", ft_strdup(s), ft_strdup(s));
-	return (0);
-}*/
