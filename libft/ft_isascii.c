@@ -18,15 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-
-/*#include <ctype.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	c;
-	
-	c = 'A';
-	printf("%i", ft_isascii(c));
-	return (0);
-}*/
