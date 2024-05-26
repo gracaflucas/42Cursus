@@ -54,15 +54,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(str, (char *)s1, size + 1);
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*test = "testing";
-	char	*set = "t";
-
-	printf("%s\n", ft_strtrim(test, set));
-	return (0);
-}*/
