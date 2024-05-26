@@ -10,11 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS = -Wall -Werror -Wextra
-
-NAME = libft.a
-
 CC = cc
+CFLAGS = -Wall -Werror -Wextra
+NAME = libft.a
 RM = rm -rf
 
 SRC =	ft_isalpha.c\
@@ -71,8 +69,8 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-bonus: $(NAME) $(BONUS_OBJS)
-	ar rcs $(NAME) $(BONUS_OBJS)
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
