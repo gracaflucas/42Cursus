@@ -18,18 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-/*
-#include <ctype.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	int	i;
-	char	c;
-	
-	c = 99;
-	i = ft_isprint(str);
-	printf("%i", i);
-	return (0);
-}*/
